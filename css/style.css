@@ -1,0 +1,209 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1{font-family: 'Roboto', sans-serif;}
+
+
+
+
+
+header {display: flex; flex-wrap:wrap;
+     justify-content: space-between;
+     align-items: center;
+}
+header nav ul{display: flex;flex-wrap:wrap;}
+
+
+header{position: sticky; top: 0; z-index: 100;}
+header{background-color: black;}
+header nav ul li a {color: white;}
+header nav ul {list-style: none;}
+header nav ul li a {text-decoration: none;}
+header nav ul li {text-align: right;}
+header a img {width: 250px; height: 100px;}
+header nav ul li a {font-size: 18px;}
+header nav ul li a {font-family:Arial, Helvetica, sans-serif;}
+header nav ul li {margin: 10px;px} 
+
+
+  .titulo {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.titulo h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+main section form {display: flex; justify-content: end;}
+main {background-color: rgb(20, 20, 20);}
+main h1{text-align: center;}
+main h1{font-size: 45px;}
+main h1{font-style: normal;}
+main section div a {text-decoration: none; color: rgb(255, 255, 255);}
+main{color: white;}
+main .productos1 div {display: flex; flex-wrap:wrap; justify-content: center; flex-direction: column; align-items: center;}
+main .productos1{display: flex; flex-wrap:wrap; justify-content: space-evenly;}
+.titulo {display: flex; flex-wrap: wrap; justify-content: center;}
+.presentacion h2{text-align: center;}
+.hero {height: 60px; background-color: rgb(14, 13, 13); overflow: visible; min-width: 200px;}
+.hero{padding: 10px 15px;}
+.hero{margin: 0px; border: 1px solid black;}
+.hero{display: flex; justify-content: center; align-items: center;}
+.productos1 div a img{width: 200px; height: 300px;}
+
+
+.productos1 .remera {
+    background-color: #fff;
+    border: 1px solid #000; 
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    width: 250px;
+  }
+  
+  .productos1 h3 {
+    color: #ffffff; 
+  }
+  
+  .productos1 a {
+    display: block;
+    background-color: #000; 
+    color: #fff; 
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .productos1 a:hover {
+    background-color: #555; 
+  }
+  .presentacion img{width: 350px; height: 300px;}
+  .presentacion div {
+      width: 45%; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;
+       align-items: center;}
+  .presentacion {display: flex; flex-wrap: wrap; justify-content: space-around;}
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  .redes div a img{ width: 50px; height: 50px;}
+.mapa iframe{width: 100px; height: 100px;}
+footer{background-color: rgb(41, 41, 41);}
+footer{color: white;}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "redes mapa";
+    gap: 20px;
+}
+.redes {
+    grid-area: redes;
+    padding: 10px;
+}
+
+.mapa {
+    grid-area: mapa;
+    position: relative;
+}
+
+.mapa iframe {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    height: 75px;
+    
+}
+.mapa {display: flex; flex-wrap: wrap; justify-content: end;}
+
+
+.galeriagrids {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+  gap: 10px;
+}
+
+.galeriagrids div img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.img-1{grid-column:span 2;}
+
+.img-2{grid-column-start: 2; grid-column-end: 4; }
+
+.img-3{grid-column-start: 1; grid-column-end: 3;}
+
+@media screen and (max-width: 700px){
+   .galeriagrids {
+     
+     grid-template-columns: repeat(3, 1fr);
+     grid-auto-rows: 400px;
+     gap: 10px;
+    }
+    .img-1{grid-column-start: 1; grid-column-end: 4;}
+    .img-2{grid-column-start: 1; grid-column-end: 4;}
+    .img-3{grid-column-start: 1; grid-column-end: 4;}
+  }
+  
+  .raul {display: flex; align-items: end; flex-direction: column;}
+  
+  .titulo {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.titulo h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
