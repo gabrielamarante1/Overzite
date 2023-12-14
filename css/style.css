@@ -80,6 +80,8 @@ main .productos1{display: flex; flex-wrap:wrap; justify-content: space-evenly;}
       width: 45%; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;
        align-items: center;}
   .presentacion {display: flex; flex-wrap: wrap; justify-content: space-around;}
+
+  
       
 
 
@@ -364,6 +366,24 @@ form > button:hover,
         font-size: 1.5rem;
     }
 }
+
+
+
+.pepe section{background-size: contain;}
+.fondo{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.texto{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)}
+  
+  .pepe {display: flex; justify-content: center; flex-wrap: ;}
 
 
     
