@@ -50,14 +50,7 @@ main .productos1{display: flex; flex-wrap:wrap; justify-content: space-evenly;}
 .productos1 div a img{width: 200px; height: 300px;}
 
 
-.productos1 .remera {
-    background-color: #fff;
-    border: 1px solid #000; 
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
-    width: 250px;
-  }
+
   
   .productos1 h3 {
     color: #ffffff; 
@@ -122,7 +115,7 @@ main .productos1{display: flex; flex-wrap:wrap; justify-content: space-evenly;}
       text-align: center;
       padding: 20px;
       background-color: #333;
-      color: white;
+      color: rgb(255, 255, 255);
   }
   
   .titulo h2 {
@@ -235,7 +228,7 @@ footer {
     font-size: 1rem;
 }
 
-.data > p > i {
+.data p i {
     color:crimson;
     margin-right: 10px;
     font-size:25px;
