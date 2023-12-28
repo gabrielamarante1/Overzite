@@ -1,0 +1,18 @@
+$colores: white, black, gray, red;
+$ancho:300px;
+$boton:(
+    boton1:black,
+    color-text:white,
+);
+
+%flex{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex($align, $wrap, $justy ){
+   
+    align-items: $align;
+    flex-wrap: $wrap;
+    justify-content: $justy;
+}

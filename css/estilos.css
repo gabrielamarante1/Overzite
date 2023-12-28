@@ -1,6 +1,9 @@
-.navbar-brand {
-  height: 80px;
-  width: 300px; }
+.titulo {
+  display: flex;
+  justify-content: center; }
+
+.container-fluid {
+  display: flex; }
 
 main {
   background-color: #141414; }
@@ -23,13 +26,14 @@ main {
   margin: 0px;
   border: 1px solid black;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center; }
+  .hero h1 {
+    color: white; }
 
 .titulo {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   text-align: center;
   padding: 20px;
   background-color: #333;
@@ -42,7 +46,10 @@ main {
 .presentacion {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px; }
   .presentacion div {
     width: 45%;
     display: flex;
@@ -51,7 +58,15 @@ main {
     justify-content: center;
     align-items: center; }
     .presentacion div h2 {
-      text-align: center; }
+      text-align: center;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      margin: 20px; }
+    .presentacion div p {
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      line-height: 1.6; }
   .presentacion img {
     width: 350px;
     height: 300px; }
@@ -88,11 +103,10 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 400px;
   gap: 10px; }
-
-div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
+  .galeriagrids div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .img-1 {
   grid-column: span 2; }
@@ -198,14 +212,6 @@ form {
     transition: .3s;
     color: #fff;
     letter-spacing: 1.5px; }
-  .input-box textarea:placeholder {
-    color: #a3a3a3; }
-  .input-box input:placeholder {
-    color: #a3a3a3; }
-  .input-box input:focus:placeholder {
-    color: transparent; }
-  .input-box textarea:focus:placeholder {
-    color: transparent; }
   .input-box input:focus {
     border-bottom: 3px solid crimson;
     animation: shake .2s; }
@@ -226,12 +232,29 @@ form {
   position: relative;
   display: inline-block;
   text-align: center; }
+  .fondo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .texto {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  color: black;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 18px; }
+  .texto h2 {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    text-align: center; }
+  .texto p {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    text-align: center; }
 
 .devoluciones {
   display: flex; }
@@ -240,13 +263,37 @@ form {
   width: 30%;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px; }
+  .textodevolucion h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    text-align: center; }
+  .textodevolucion p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 20px; }
 
 .imagendevolucion {
   width: 50%;
   display: flex;
   justify-content: center;
-  background-size: contain; }
+  background-size: contain;
+  align-items: center; }
+  .imagendevolucion img {
+    width: 60%;
+    height: 80%;
+    object-fit: cover; }
 
 .pepino {
   display: flex;
@@ -257,35 +304,44 @@ form {
 footer {
   background-color: #292929;
   color: white;
-  background-color: #333;
-  color: white;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "redes mapa";
   gap: 20px; }
-
-.redes {
-  grid-area: redes;
-  padding: 10px; }
-  .redes div a img {
-    width: 50px;
-    height: 50px; }
-
-.mapa {
-  grid-area: mapa;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: end; }
-  .mapa iframe {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 100%;
-    height: 75px; }
+  footer .redes {
+    grid-area: redes;
+    padding: 10px; }
+    footer .redes h3 {
+      font-size: 28px; }
+    footer .redes div a {
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin-top: 10px; }
+      footer .redes div ahover {
+        background-color: #555; }
+      footer .redes div a img {
+        width: 35px;
+        height: 35px;
+        object-fit: cover; }
+  footer .mapa {
+    grid-area: mapa;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end; }
+    footer .mapa h3 {
+      font-size: 20px; }
+    footer .mapa iframe {
+      width: 200px;
+      height: 35px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 100%;
+      height: 75px; }
 
 @media screen and (max-width: 700px) {
   .galeriagrids {
