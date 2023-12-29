@@ -2,50 +2,21 @@ main{background-color: rgb(20, 20, 20);
     section{
         h1{font-style: normal; font-size: 45px; text-align: center;}
     }
-    section{
-        
-        div{
-            h2{}
-            p{}
-        }
-        img{}
-    }
-    section{
-        h2{}
+    
     }
     section{
         div{
-            h3{}
+            
             a{text-decoration: none; color: rgb(255, 255, 255);}
             main{color: white;}
-            a{}
+            
         }
-        div{
-            h3{}
-            a{}
-            a{}
-        }
-        div{
-            h3{}
-            a{}
-            a{}
-        }
-
+        
+        
     }
-    section{
-        div{
-            img{}
-        }
-        div{
-            img{}
-        }
-        div{
-            img{}
-        }
+    
 
-    }
 
-}
 
 
 .hero{height: 60px; background-color: rgb(14, 13, 13); overflow: visible; min-width: 200px;
@@ -78,7 +49,8 @@ main{background-color: rgb(20, 20, 20);
             margin: 20px;}
         p{color: #fff; font-family: 'Arial', sans-serif;
             margin: 20px;
-            line-height: 1.6;}
+            line-height: 1.6;
+            text-align: center;}
     }
     img{width: 350px; height: 300px;}
 
@@ -112,13 +84,8 @@ main{background-color: rgb(20, 20, 20);
             height:100%;
             object-fit: cover;}
     }
-    div{
-        img{}
-    }
-    div{
-        img{}
-    }}
-
+}
+   
 
 .img-1{grid-column:span 2;}
   
@@ -259,8 +226,8 @@ form{display:flex;
     text-align: center;}
     font-size: 18px;
     }
-.devoluciones{display: flex;}
-.textodevolucion{width: 30%; display: flex; justify-content: center; flex-direction: column; align-items: center;
+.devoluciones{display: flex; flex-wrap: wrap;}
+.textodevolucion{width: 40%; display: flex; justify-content: center; flex-direction: column; align-items: center; flex-wrap: wrap;
     max-width: 2000px;
       margin: 0 auto;
       padding: 20px;
@@ -274,13 +241,14 @@ form{display:flex;
         color: white;
         font-family: 'Arial', sans-serif;
       margin: 20px;
-      
+      text-align: center;
+
 
     }
 }
-.imagendevolucion{width: 50%; display: flex; justify-content: center; background-size: contain; align-items: center;
-    img{width: 60%;
-        height: 80%;
-        object-fit:cover;}}
+.imagendevolucion{width: 400px; display: flex; justify-content: center; background-size: contain; align-items: center; flex-wrap: wrap;
+    img{width: 300px;
+        height: 250px;
+        }}
 .pepino {display: flex; align-items: center; justify-content: center; margin-top: 20px;}
 

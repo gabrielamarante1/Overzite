@@ -11,11 +11,13 @@ main {
     font-style: normal;
     font-size: 45px;
     text-align: center; }
-  main section div a {
-    text-decoration: none;
-    color: white; }
-  main section div main {
-    color: white; }
+
+section div a {
+  text-decoration: none;
+  color: white; }
+
+section div main {
+  color: white; }
 
 .hero {
   height: 60px;
@@ -66,7 +68,8 @@ main {
       color: #fff;
       font-family: 'Arial', sans-serif;
       margin: 20px;
-      line-height: 1.6; }
+      line-height: 1.6;
+      text-align: center; }
   .presentacion img {
     width: 350px;
     height: 300px; }
@@ -259,14 +262,16 @@ form {
     text-align: center; }
 
 .devoluciones {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .textodevolucion {
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 2000px;
   margin: 0 auto;
   padding: 20px; }
@@ -284,18 +289,19 @@ form {
     align-items: center;
     color: white;
     font-family: 'Arial', sans-serif;
-    margin: 20px; }
+    margin: 20px;
+    text-align: center; }
 
 .imagendevolucion {
-  width: 50%;
+  width: 400px;
   display: flex;
   justify-content: center;
   background-size: contain;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .imagendevolucion img {
-    width: 60%;
-    height: 80%;
-    object-fit: cover; }
+    width: 300px;
+    height: 250px; }
 
 .pepino {
   display: flex;
@@ -378,3 +384,8 @@ footer {
     transform: translateX(-10px); }
   20%, 40%, 60%, 80% {
     transform: translateX(10px); } }
+
+@media screen and (max-width: 676px) {
+  .presentacion div {
+    width: 90%;
+    height: 90%; } }
