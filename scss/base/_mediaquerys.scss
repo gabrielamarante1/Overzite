@@ -5,11 +5,11 @@
       grid-auto-rows: 400px;
       gap: 10px;
      }
-     .img-1{grid-column-start: 1; grid-column-end: 4;}
-     .img-2{grid-column-start: 1; grid-column-end: 4;}
-     .img-3{grid-column-start: 1; grid-column-end: 4;}
+     .img-1{grid-column-start: 1; grid-column-end: 4; display: none;}
+     .img-2{grid-column-start: 1; grid-column-end: 4; display: none;}
+     .img-3{grid-column-start: 1; grid-column-end: 4; display: none;}
    }
-   @media screen and (max-width:600px) {
+   @media screen and (max-width:767px) {
     .container {
         width: 95%;
         display: flex;
@@ -30,6 +30,7 @@
     10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
     20%, 40%, 60%, 80% {transform: translateX(10px);} 
  }
+
  @media screen and (max-width: 676px){
     .presentacion{
         div{width: 90%;
@@ -37,3 +38,91 @@
     }
 
  }
+
+ 
+@media (max-width: 1700px) {
+    .texto {
+        h2 {
+            font-size: 2.8em;
+        }
+        p {
+            font-size: 29px;
+        }
+    }
+}
+
+@media (max-width: 1283px) {
+    .texto {
+        h2 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 987px) {
+    .texto { margin-top: 5px;
+        h2 {
+            font-size: 2.0em;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 793px) {
+    .texto { margin-top: 5px;
+        h2 {
+            font-size: 1.6em;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 711px) {
+    .texto {
+        width: 75%;
+    
+        h2 {
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        p {
+            font-size: 13px;
+            margin: 5px;
+        }
+    }
+}
+
+@media (max-width: 473px) {
+    .fondo { width: 100%; height: auto;}
+
+    .texto {
+        width: 95%;
+        margin-top: 0;
+    
+        h2 {
+            font-size: 17px;
+            margin: 5px;
+        }
+
+        p {
+            font-size: 10px;
+            margin: 5px;
+        }
+    }
+}

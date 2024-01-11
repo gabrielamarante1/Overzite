@@ -24,14 +24,14 @@ footer {
                 padding: 10px;
                 margin-top: 10px;
                 &hover{background-color: #555;}
-                img {
+                
                     
-                    
+                svg{
                     width:35px;
                     height:35px;
                     object-fit: cover;
                     
-                }
+                }   
             }
         }
     }

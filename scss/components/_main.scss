@@ -75,23 +75,23 @@ main{background-color: rgb(20, 20, 20);
 .galeriagrids{width: 100%;
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: 400px;
     gap: 10px;
   
     div{
         img{width:100%;
             height:100%;
-            object-fit: cover;}
+            object-fit: fill;}
     }
 }
    
 
-.img-1{grid-column:span 2;}
+.img-1{grid-column-start: 2; grid-column-end: 6;}
   
-.img-2{grid-column-start: 2; grid-column-end: 4; }
+.img-2{grid-column-start: 2; grid-column-end: 6; }
   
-.img-3{grid-column-start: 1; grid-column-end: 3;}
+.img-3{grid-column-start: 2; grid-column-end: 6;}
 
 .jose{display:flex;
     justify-content: center;
@@ -114,7 +114,8 @@ main{background-color: rgb(20, 20, 20);
     flex-direction: column;
     gap:50px;
     h1{text-align: left;
-        letter-spacing: 5px;}
+        letter-spacing: 5px;
+           }
 }
 
 .data{display: flex;
@@ -165,16 +166,17 @@ form{display:flex;
         top:50%;
         transform: translateY(-50%);
         right: 10px;
+        color: #000;
         
         transition: .3s;}
     input{width: 100%;
     height: 40px;
     padding: 0 10px;
     outline:none;
-    
+    color: #000;
     letter-spacing: 1px;
     transition:.3s;
-    color:#fff;}
+    }
     textarea{width: 100%;
         height: 130px;
         padding: 10px;
@@ -182,7 +184,7 @@ form{display:flex;
         letter-spacing: 1px;
         outline: none;
         transition:.3s;
-        color:#fff;
+        color:#000000;
         letter-spacing: 1.5px;}
     %textarea{color:#a3a3a3;}
     %input{color:#a3a3a3;}
@@ -197,58 +199,127 @@ form{display:flex;
     
 }
 
-.pepe{display: flex; justify-content: center; flex-wrap:wrap;
-    section{background-size: contain;}
-}
-.fondo{position: relative;
-    display: inline-block;
+.pepe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .fondo {
+    position: relative;
     text-align: center;
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }}
-.texto{position: absolute;
-    width: 100%;
-    height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: whitesmoke;
-  max-width: 2000px;
-  margin: 0 auto;
-  padding: 20px;
-  h2{font-family: 'Arial', sans-serif;
-    margin: 20px;
-    text-align: center;}
-  p{font-family: 'Arial', sans-serif;
-    margin: 20px;
-    text-align: center;}
-    font-size: 18px;
+    overflow: hidden;
+    max-width: 100%;
+    width: 80%; // Añadido para ocupar todo el ancho del contenedor flex
+    height: auto;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-.devoluciones{display: flex; flex-wrap: wrap;}
-.textodevolucion{width: 40%; display: flex; justify-content: center; flex-direction: column; align-items: center; flex-wrap: wrap;
-    max-width: 2000px;
-      margin: 0 auto;
-      padding: 20px;
-    h2{display: flex; justify-content: center; align-items: center; color: white;
-        font-family: 'Arial', sans-serif;
+  }
+  
+  .texto {
+    position: absolute;
+    
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    
+    color: whitesmoke;
+    max-width: 90%;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    margin-top: 25px;
+  
+    h2 {
+      font-family: 'Arial', sans-serif;
       margin: 20px;
-      text-align: center;
-
+      font-size: 3.7em;
     }
-    p{display: flex; justify-content: center; align-items: center;
-        color: white;
-        font-family: 'Arial', sans-serif;
+  
+    p {
+      font-family: 'Arial', sans-serif;
       margin: 20px;
-      text-align: center;
-
-
+      font-size: 40px;
     }
 }
-.imagendevolucion{width: 400px; display: flex; justify-content: center; background-size: contain; align-items: center; flex-wrap: wrap;
-    img{width: 300px;
-        height: 250px;
-        }}
-.pepino {display: flex; align-items: center; justify-content: center; margin-top: 20px;}
 
+.devoluciones {
+    margin-top: 10px;
+    background-color: rgb(34, 34, 34); /* Fondo blanco para todo el cuerpo */
+    color: #000000; /* Texto en negro */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    margin: 0;
+  
+  
+  .textodevolucion {
+    margin-top: 10px;
+    width: 70%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    padding: 20px; /* Espaciado interno del contenedor */
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    border: 2px solid #000000; /* Borde negro para el contenedor */
+    .titulo2 {
+        font-size: 30px; /* Tamaño del título */
+        color: #000000; /* Color del título en negro */
+        margin-top: 10px;
+        text-align: center;
+        border-bottom: 2px solid #000000;
+      }
+      
+    .parrafo {
+        font-size: 19px; /* Tamaño del párrafo */
+        color: #000000; /* Color del texto en negro */
+        margin-top: 10px;
+        
+        .detallerojo {
+            color: #ff0000; /* Detalle en rojo */
+          }
+          
+      }
+  }
+}
+ 
+  
+  
+.envios {
+    margin-top: 10px;
+    background-color: rgb(34, 34, 34); /* Fondo blanco para todo el cuerpo */
+    color: #000000; /* Texto en negro */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    margin: 0;
+  
+  
+  .textoenvios {
+    margin-top: 10px;
+    width: 70%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    padding: 20px; /* Espaciado interno del contenedor */
+    background-color: #0e0e0e; /* Fondo blanco para el contenedor */
+    border: 2px solid #949494; /* Borde negro para el contenedor */
+    .titulo3 {
+        font-size: 30px; /* Tamaño del título */
+        color: #ffffff; /* Color del título en negro */
+        margin-top: 10px;
+        text-align: center;
+        border-bottom: 2px solid #ffffff;
+      }
+      
+    .parrafo2 {
+        font-size: 19px; /* Tamaño del párrafo */
+        color: #ffffff; /* Color del texto en negro */
+        margin-top: 10px;
+        
+        .detallerojo {
+            color: #ff0000; /* Detalle en rojo */
+          }
+          
+      }
+  }
+}
+  
